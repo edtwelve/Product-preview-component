@@ -65,17 +65,42 @@ body {
     color: var(--dark-grayish-blue);
 }
 
+.precios {
+    display:flex;
+}
+
+.precios p {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: var(--dark-cyan);
+}
+
+.precios div {
+    display: flex;
+    place-items: center;
+}
+#descuento {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+    font-size: small;
+    text-decoration: line-through;
+}
+
 .boton {
     background-color: var(--dark-cyan);
     color: white;
     display:flex;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
-}
-
-
-.precios {
-    display:flex;
+    width: 75%;
+    padding: 10px;
+    border-radius: 10px;
 }
 .cart {
-    background-image: url("images/icon-cart.svg")
+    background-image: url("images/icon-cart.svg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
 }
