@@ -21,13 +21,15 @@
 
 body {
     background-color: var(--cream);
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 .card {
-    border: 1px solid red;
-    border-radius: 30px;
     height: 70vh;
     max-height: 80vh;
-    margin: 0 auto;
+    min-height: 230px;
+    max-width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,47 +40,59 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     background-color: red;
+    border-radius: 10px 10px 0 0;
 }
 
 .info {
-    height: 70%;
+    height: 60%;
     background-color: var(--white);
     display:flex;
     flex-direction: column;
-
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
 }
 
 .info h1{
     font-family: 'Fraunces', serif;
+    font-size: xx-large;
+    margin-bottom: 14px;
 }
 
 .info p {
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 25px;
+    /*line-height: 2px;*/
 }
-.perfume {
+
+#perfume {
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: var(--dark-grayish-blue);
+    margin-bottom: 6px;
 }
 
 .precios {
     display:flex;
 }
 
-.precios p {
-    font-family: 'Fraunces', serif;
-    font-size: 30px;
-    color: var(--dark-cyan);
-}
-
 .precios div {
     display: flex;
     place-items: center;
 }
+
+.precios p {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: var(--dark-cyan);
+    margin-right: 20px;
+}
+
 #descuento {
     font-family: 'Montserrat', sans-serif;
     color: var(--dark-grayish-blue);
@@ -92,9 +106,10 @@ body {
     display:flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    width: 75%;
+    width: 95%;
     padding: 10px;
     border-radius: 10px;
+    margin: 0 auto;
 }
 .cart {
     background-image: url("images/icon-cart.svg");
