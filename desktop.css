@@ -49,3 +49,7 @@
 #descuento {
     font-size: 18px;
 }
+
+.boton:active {
+    background-color: #1a4031;
+}
